@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0b0f1c"/>
+      <stop offset="55%" stop-color="#111629"/>
+      <stop offset="100%" stop-color="#0a0c16"/>
+    </linearGradient>
+    <radialGradient id="glow-blue" cx="22%" cy="22%" r="60%">
+      <stop offset="0%" stop-color="#00d2ff" stop-opacity="0.22"/>
+      <stop offset="100%" stop-color="#00d2ff" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="glow-violet" cx="82%" cy="80%" r="60%">
+      <stop offset="0%" stop-color="#8b5cf6" stop-opacity="0.26"/>
+      <stop offset="100%" stop-color="#8b5cf6" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="rim" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00d4ff" stop-opacity="0.55"/>
+      <stop offset="50%" stop-color="#4f46e5" stop-opacity="0.28"/>
+      <stop offset="100%" stop-color="#a855f7" stop-opacity="0.55"/>
+    </linearGradient>
+    <linearGradient id="sp-grad" x1="12%" y1="15%" x2="90%" y2="85%">
+      <stop offset="0%" stop-color="#00e5ff"/>
+      <stop offset="35%" stop-color="#3b82f6"/>
+      <stop offset="72%" stop-color="#7c3aed"/>
+      <stop offset="100%" stop-color="#c084fc"/>
+    </linearGradient>
+    <linearGradient id="bar-grad" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#38bdf8"/>
+      <stop offset="100%" stop-color="#00f0ff"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Premium dark rounded base -->
+  <rect x="0" y="0" width="64" height="64" rx="15" fill="url(#bg)"/>
+  <rect x="0" y="0" width="64" height="64" rx="15" fill="url(#glow-blue)"/>
+  <rect x="0" y="0" width="64" height="64" rx="15" fill="url(#glow-violet)"/>
+  <rect x="1.25" y="1.25" width="61.5" height="61.5" rx="14" fill="none" stroke="url(#rim)" stroke-width="1.5"/>
+
+  <!-- Geometric S -->
+  <path d="M 28.4 20.4 C 26.2 16.6, 13.8 16.5, 13.4 23.6 C 13.0 30.2, 29.4 29.8, 29.0 39.0 C 28.6 46.8, 15.6 47.0, 12.6 42.4"
+        fill="none" stroke="url(#sp-grad)" stroke-width="6.4" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- Geometric P -->
+  <path d="M 37.6 45.6 L 37.6 18.4 L 45.8 18.4 C 52.8 18.4, 53.0 33.2, 45.8 33.2 L 37.6 33.2"
+        fill="none" stroke="url(#sp-grad)" stroke-width="6.4" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- Subtle ascending analytics micro-bars under P bowl -->
+  <rect x="44.8" y="42.4" width="3.2" height="6.4" rx="1.6" fill="url(#bar-grad)" opacity="0.88"/>
+  <rect x="50.0" y="38.2" width="3.2" height="10.6" rx="1.6" fill="url(#bar-grad)"/>
+</svg>
